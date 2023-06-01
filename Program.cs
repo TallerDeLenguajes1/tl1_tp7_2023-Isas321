@@ -21,21 +21,19 @@ do{
     Console.WriteLine("Ingrese segundo valor");
     b=ingresarEntero();
 
-    Console.WriteLine("error");
-
     switch (op)
     {
-        //  case 1:
-        //     if(a!=-999 AND b!=-999){
-        //         cal.Sumar(a);
-        //         cal.Sumar(b);
-        //         //Console.WriteLine("\n"+a+"+"+b+"="+cal.Resultado);
-        //         cal.Limpiar();
-        //     }   else{
-        //         Console.WriteLine("Error");
-        //     }
+         case 1:
+            if(a!=-999 && b!=-999){
+                cal.Sumar(a);
+                cal.Sumar(b);
+                Console.WriteLine("\n"+a+"+"+b+"="+cal.Resultado+"\n");
+                cal.Limpiar();
+            }   else{
+                Console.WriteLine("Error");
+            }
 
-          //  break;
+           break;
         case 2:
             break;
         case 3:
