@@ -1,29 +1,23 @@
-﻿
+﻿using EspacioCalculadora;
 
-using EspacioCalculadora;
-
-//Console.WriteLine()
 Calculadora cal=new Calculadora(); //renombre de biblioteca?
-int a,b, op;
+int a, b, op;
+Console.Clear();
 do{
-    //Console.WriteLine("Valor Inicial"+cal.Resultado);
-
+    Console.WriteLine("\n\n\nCalculadora\n");
     Console.WriteLine("1-Sumar");
     Console.WriteLine("2-Restar");
     Console.WriteLine("3-Multiplicar");
     Console.WriteLine("4-Dividir");
-    Console.WriteLine("5-Limpiar");
-    Console.WriteLine("6-Salir");
+    Console.WriteLine("5-Salir\n");
     op=ingresarEntero();
-
-    Console.WriteLine("Ingrese primer valor");
-    a=ingresarEntero();
-    Console.WriteLine("Ingrese segundo valor");
-    b=ingresarEntero();
-
     switch (op)
     {
          case 1:
+            Console.WriteLine("Ingrese primer valor");
+            a=ingresarEntero();
+            Console.WriteLine("Ingrese segundo valor");
+            b=ingresarEntero();
             if(a!=-999 && b!=-999){
                 cal.Sumar(a);
                 cal.Sumar(b);
@@ -32,24 +26,60 @@ do{
             }   else{
                 Console.WriteLine("Error");
             }
+            Console.Write("Presione una tecla para continuar");
+            cal.Limpiar();            
+            Console.ReadKey();
 
            break;
         case 2:
+            Console.WriteLine("Ingrese primer valor");
+            a=ingresarEntero();
+            Console.WriteLine("Ingrese segundo valor");
+            b=ingresarEntero();
+            if(a!=-999 && b!=-999){
+                cal.Sumar(a);
+                cal.Restar(b);
+                Console.WriteLine("\n"+a+"-"+b+"="+cal.Resultado+"\n");
+            }
+            cal.Limpiar();
+            Console.Write("Presione una tecla para continuar");
+            Console.ReadKey();
+
             break;
         case 3:
+            Console.WriteLine("Ingrese primer valor");
+            a=ingresarEntero();
+            Console.WriteLine("Ingrese segundo valor");
+            b=ingresarEntero();
+            if(a!=-999 && b!=-999){
+                cal.Sumar(a);
+                cal.Multiplicar(b);
+                Console.WriteLine("\n"+a+"*"+b+"="+cal.Resultado+"\n");
+            }
+            cal.Limpiar();
+            Console.Write("Presione una tecla para continuar");
+            Console.ReadKey();
             break;
         case 4:
+            Console.WriteLine("Ingrese primer valor");
+            a=ingresarEntero();
+            Console.WriteLine("Ingrese segundo valor");
+            b=ingresarEntero();
+            if(a!=-999 && b!=-999 && b!=0){
+                cal.Sumar(a);
+                cal.Dividir(b);
+                Console.WriteLine("\n"+a+"*"+b+"="+cal.Resultado+"\n");
+            }
+            cal.Limpiar();
+            Console.Write("Presione una tecla para continuar");
+            Console.ReadKey();
             break;
         case 5:
             break;
-        case 6:
-            break;
     }
-}while(op!=6);
+}while(op!=5);
 
-
-
-//Console.ReadKey();
+return 0;
 
 
 int ingresarEntero(){
@@ -60,19 +90,4 @@ int ingresarEntero(){
         return -999;
     }
 }
-
-
-
-// cal.Restar(5);
-// Console.WriteLine(cal.Resultado);
-
-// cal.Multiplicar(5);
-// Console.WriteLine(cal.Resultado);
-
-// cal.Dividir(5);
-// Console.WriteLine(cal.Resultado);
-
-// cal.Limpiar(15);
-// Console.WriteLine(cal.Resultado);
-
 
