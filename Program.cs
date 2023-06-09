@@ -91,7 +91,12 @@
 //     }
 // }
 
-using EspacioEmpleados
+using EspacioEmpleados;
 
-Empleados empleado=new Empleados(nombre, apellido, fechanacimiento, estadoCivil, genero, fechaingreso, sueldoBasico, Cargo);
+string nombre="javi";
 
+Empleados empleado = new Empleados(nombre, apellido, fechanacimiento, estadoCivil, genero, fechaingreso, sueldoBasico, Cargo);
+
+Console.WriteLine(empleado.nombre);
+
+empleado.antiguedad();
