@@ -1,5 +1,3 @@
-using System;
-
 namespace EspacioEmpleados;
 
 public enum cargos{
@@ -11,43 +9,70 @@ public enum cargos{
     }
     
 public class Empleados{
-    private string? Nombre;
-    private string? Apellido;
-    private DateTime FechaNacimiento;
-    private char EstadoCivil;
-    private char Genero;    
-    private DateTime FechaIngreso;
-    private double SueldoBasico;
-    private cargos Cargo;
+    private string? nombre;
+    private string? apellido;
+    private DateTime fechaNacimiento;
+    private char estadoCivil;
+    private char genero;    
+    private DateTime fechaIngreso;
+    private double sueldoBasico;
+    private cargos cargo;
+    //Todo lo que sea privado se recomiendo declararlo en minuscula
+    //Importante: Seleccionar todo public class Empleados hacer clic en el foquito y
+    //Encapsular campos y usar propiedad
 
 
-
-    public Empleados(string nombre, string apellido, DateTime fechaNacimiento, char estadoCivil, char genero, DateTime fechaIngreso, double sueldoBasico, cargos cargo)
+    //Constructor empleados
+    public Empleados(string? nombre, string? apellido, DateTime fechaNacimiento, char estadoCivil, char genero, DateTime fechaIngreso, double sueldoBasico, int cargo)
     {
-        Nombre1 = nombre;
-        Apellido1 = apellido;
-        FechaNacimiento1 = fechaNacimiento;
-        EstadoCivil1 = estadoCivil;
-        Genero1 = genero;
-        FechaIngreso1 = fechaIngreso;
-        SueldoBasico1 = sueldoBasico;
-        Cargo1 = cargo;
-    }
+        Nombre = nombre;
+        Apellido = apellido;
+        FechaNacimiento = fechaNacimiento;
+        EstadoCivil = estadoCivil;
+        Genero = genero;
+        FechaIngreso = fechaIngreso;
+        SueldoBasico = sueldoBasico;
+        //Cargo = cargo;
 
-    public string? Nombre1 { get => Nombre; set => Nombre = value; }
-    public string? Apellido1 { get => Apellido; set => Apellido = value; }
-    public DateTime FechaNacimiento1 { get => FechaNacimiento; set => FechaNacimiento = value; }
-    public char EstadoCivil1 { get => EstadoCivil; set => EstadoCivil = value; }
-    public char Genero1 { get => Genero; set => Genero = value; }
-    public DateTime FechaIngreso1 { get => FechaIngreso; set => FechaIngreso = value; }
-    public double SueldoBasico1 { get => SueldoBasico; set => SueldoBasico = value; }
-    public cargos Cargo1 { get => Cargo; set => Cargo = value; }
+switch (cargo)
+            {
+                case 0:
+                    Cargo= cargos.Auxiliar;
+                    break;
+                case 1:
+                    Cargo= cargos.Administrativo;
+                    break;
+                case 2:
+                    Cargo= cargos.Ingeniero;
+                    break;
+                case 3:
+                    Cargo = cargos.Especialista;
+                    break;
+                case 4:
+                    Cargo = cargos.Investigador;
+                    break;                    
+            }
+    }
+    
+    //Importante: para obtener el constructor Empleados primero seleccionar todos los public de los empleados hacer clic en el foco y 
+    //Generar el constructor empleados
+
+
+    //Encapsulamiento de campos
+    public string? Nombre { get => nombre; set => nombre = value; }
+    public string? Apellido { get => apellido; set => apellido = value; }
+    public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
+    public char EstadoCivil { get => estadoCivil; set => estadoCivil = value; }
+    public char Genero { get => genero; set => genero = value; }
+    public DateTime FechaIngreso { get => fechaIngreso; set => fechaIngreso = value; }
+    public double SueldoBasico { get => sueldoBasico; set => sueldoBasico = value; }
+    public cargos Cargo { get => cargo; set => cargo = value; }
 
 
     public int antiguedad(){
         int fechaActual = DateTime.Now.Year;
 
-        return (fechaActual - FechaIngreso1.Year);
+        return (fechaActual - FechaIngreso.Year);
     }
 }
 
