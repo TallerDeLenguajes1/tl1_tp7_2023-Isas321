@@ -1,6 +1,6 @@
 namespace EspacioEmpleados;
 
-public enum cargos{
+public enum cargos{ //  Cuando uso enum cada uno de estos valores se le asigna automaticamente un numero 
         Auxiliar,
         Administrativo,
         Ingeniero,
@@ -9,7 +9,7 @@ public enum cargos{
     }
     
 public class Empleados{
-    private string? nombre;
+    private string? nombre; //  Es importante poner el signo de pregunta para que el string pueda aceptar el NULL de manera adecuada 
     private string? apellido;
     private DateTime fechaNacimiento;
     private char estadoCivil;
@@ -32,26 +32,24 @@ public class Empleados{
         Genero = genero;
         FechaIngreso = fechaIngreso;
         SueldoBasico = sueldoBasico;
-        //Cargo = cargo;
-
-switch (cargo)
-            {
-                case 0:
-                    Cargo= cargos.Auxiliar;
-                    break;
-                case 1:
-                    Cargo= cargos.Administrativo;
-                    break;
-                case 2:
-                    Cargo= cargos.Ingeniero;
-                    break;
-                case 3:
-                    Cargo = cargos.Especialista;
-                    break;
-                case 4:
-                    Cargo = cargos.Investigador;
-                    break;                    
-            }
+        switch (cargo)
+                    {
+                        case 0:
+                            Cargo= cargos.Auxiliar;
+                            break;
+                        case 1:
+                            Cargo= cargos.Administrativo;
+                            break;
+                        case 2:
+                            Cargo= cargos.Ingeniero;
+                            break;
+                        case 3:
+                            Cargo = cargos.Especialista;
+                            break;
+                        case 4:
+                            Cargo = cargos.Investigador;
+                            break;                    
+                    }
     }
     
     //Importante: para obtener el constructor Empleados primero seleccionar todos los public de los empleados hacer clic en el foco y 
@@ -68,6 +66,21 @@ switch (cargo)
     public double SueldoBasico { get => sueldoBasico; set => sueldoBasico = value; }
     public cargos Cargo { get => cargo; set => cargo = value; }
 
+
+    public DateTime ingresaFecha(){
+        DateTime fecha;
+
+        Console.WriteLine("Ingrese fecha de nacimiento");
+
+        int.TryParse(ageInput, out var age)
+         
+        Console.Write("Anio: ");        int anio = Convert.ToInt16(Console.ReadLine());
+        Console.Write("Mes: ");        int mes = Convert.ToInt16(Console.ReadLine());
+        Console.Write("Dia: ");        int dia = Convert.ToInt16(Console.ReadLine());
+        fecha = new DateTime(anio,mes,dia);
+        
+        return fecha;
+    } 
 
     public int antiguedad(){
         int fechaActual = DateTime.Now.Year;

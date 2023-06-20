@@ -97,8 +97,14 @@ using EspacioEmpleados;
 // string apellido="isasmendi";
 // DateTime FechaNacimiento, FechaIngreso;
 // char estadoCivil='x', genero='c';
-var nombre= Console.ReadLine();
-var apellido= Console.ReadLine();
+//var nombre= Console.ReadLine();
+//var apellido= Console.ReadLine();
+
+Console.Write("Ingrese el nombre: ");       string nombre = Console.ReadLine().ToString();
+Console.Write("Ingrese el apellido: ");     string apellido = Console.ReadLine().ToString();
+
+
+
 var fechaNacimiento= new DateTime(2014,12,12);
 var estadoCivil= Convert.ToChar(Console.ReadLine().ToString());
 var genero= Convert.ToChar(Console.ReadLine().ToString());
@@ -106,6 +112,8 @@ var fechaIngreso= new DateTime(2014,12,12);
 var sueldoBasico= Convert.ToDouble(Console.ReadLine());
 //var cargo= int.TryParse(Console.ReadLine(), out empleado.SueldoBasico);
 var cargo=1;
+
+
 
 Empleados empleado = new Empleados(nombre, apellido,fechaNacimiento,estadoCivil,genero,fechaIngreso,sueldoBasico,cargo);
 
