@@ -1,5 +1,7 @@
 namespace EspacioEmpleados;
 
+//const int indefinido=9999;
+
 public enum cargos{ //  Cuando uso enum cada uno de estos valores se le asigna automaticamente un numero 
         Auxiliar,
         Administrativo,
@@ -55,7 +57,6 @@ public class Empleados{
     //Importante: para obtener el constructor Empleados primero seleccionar todos los public de los empleados hacer clic en el foco y 
     //Generar el constructor empleados
 
-
     //Encapsulamiento de campos
     public string? Nombre { get => nombre; set => nombre = value; }
     public string? Apellido { get => apellido; set => apellido = value; }
@@ -67,27 +68,39 @@ public class Empleados{
     public cargos Cargo { get => cargo; set => cargo = value; }
 
 
-    public DateTime ingresaFecha(){
-        DateTime fecha;
-
-        Console.WriteLine("Ingrese fecha de nacimiento");
-
-        int.TryParse(ageInput, out var age)
-         
-        Console.Write("Anio: ");        int anio = Convert.ToInt16(Console.ReadLine());
-        Console.Write("Mes: ");        int mes = Convert.ToInt16(Console.ReadLine());
-        Console.Write("Dia: ");        int dia = Convert.ToInt16(Console.ReadLine());
-        fecha = new DateTime(anio,mes,dia);
-        
-        return fecha;
-    } 
 
     public int antiguedad(){
         int fechaActual = DateTime.Now.Year;
-
         return (fechaActual - FechaIngreso.Year);
     }
+
+    public int edad(){
+        int fechaActual = DateTime.Now.Year;
+        return (fechaActual - FechaNacimiento.Year);
+    }
+
+    public int jubilacion(){
+        if(Genero=='m'){
+            return 65-edad();
+        } else{
+            return 60-edad();
+        }
+    }
+
+    public double salario(){
+        double adicional, Salario;
+        if(antiguedad()<20){
+            adicional=SueldoBasico*antiguedad()*0.01;
+        } else{
+            adicional=SueldoBasico*0.25;
+        }
+        if(Cargo==cargos.Especialista || Cargo==cargos.Ingeniero){
+            adicional=adicional*1.50;
+        }
+        if(EstadoCivil=='c'){
+            adicional=adicional+15000;
+        }
+        Salario = SueldoBasico + adicional; 
+        return Salario;
+    }
 }
-
-
-

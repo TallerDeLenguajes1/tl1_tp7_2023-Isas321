@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repo\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj": {}
+    "D:\\Documentos\\000 - Programador Universitario\\taller1\\Repositorio\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj": {}
   },
   "projects": {
-    "C:\\Repo\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj": {
+    "D:\\Documentos\\000 - Programador Universitario\\taller1\\Repositorio\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
+        "projectUniqueName": "D:\\Documentos\\000 - Programador Universitario\\taller1\\Repositorio\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
         "projectName": "tl1_tp7_2023-Isas321",
-        "projectPath": "C:\\Repo\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\tl1_tp7_2023-Isas321\\obj\\",
+        "projectPath": "D:\\Documentos\\000 - Programador Universitario\\taller1\\Repositorio\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\000 - Programador Universitario\\taller1\\Repositorio\\tl1_tp7_2023-Isas321\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

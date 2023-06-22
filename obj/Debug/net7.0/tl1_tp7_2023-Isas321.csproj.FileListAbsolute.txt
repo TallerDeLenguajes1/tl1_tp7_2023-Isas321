@@ -28,3 +28,18 @@ C:\Repo\tl1_tp7_2023-Isas321\obj\Debug\net7.0\refint\tl1_tp7_2023-Isas321.dll
 C:\Repo\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.pdb
 C:\Repo\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.genruntimeconfig.cache
 C:\Repo\tl1_tp7_2023-Isas321\obj\Debug\net7.0\ref\tl1_tp7_2023-Isas321.dll
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\bin\Debug\net7.0\tl1_tp7_2023-Isas321.exe
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\bin\Debug\net7.0\tl1_tp7_2023-Isas321.deps.json
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\bin\Debug\net7.0\tl1_tp7_2023-Isas321.runtimeconfig.json
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\bin\Debug\net7.0\tl1_tp7_2023-Isas321.dll
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\bin\Debug\net7.0\tl1_tp7_2023-Isas321.pdb
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.csproj.AssemblyReference.cache
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.AssemblyInfoInputs.cache
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.AssemblyInfo.cs
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.csproj.CoreCompileInputs.cache
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.dll
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\refint\tl1_tp7_2023-Isas321.dll
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.pdb
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\tl1_tp7_2023-Isas321.genruntimeconfig.cache
+D:\Documentos\000 - Programador Universitario\taller1\Repositorio\tl1_tp7_2023-Isas321\obj\Debug\net7.0\ref\tl1_tp7_2023-Isas321.dll
