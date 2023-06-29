@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repo\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\Downloads\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
       "projectName": "tl1_tp7_2023-Isas321",
-      "projectPath": "C:\\Repo\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
+      "projectPath": "C:\\Users\\Alumno\\Downloads\\tl1_tp7_2023-Isas321\\tl1_tp7_2023-Isas321.csproj",
       "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Repo\\tl1_tp7_2023-Isas321\\obj\\",
+      "outputPath": "C:\\Users\\Alumno\\Downloads\\tl1_tp7_2023-Isas321\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
